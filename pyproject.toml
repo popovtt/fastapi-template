@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "bravo-shop"
+version = "0.1.0"
+description = "BravoShop with Nicu"
+authors = ["popovtt <piligrimqwert@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+fastapi = "^0.115.0"
+SQLAlchemy = {extras = ["asyncio"], version = "^2.0.35"}
+uvicorn = {extras = ["standard"], version = "^0.30.6"}
+asyncpg = "^0.29.0"
+alembic = "^1.13.2"
+pytest = "^8.3.3"
+pydantic = "^2.9.2"
+pydantic-settings = "^2.5.2"
+
+[tool.poetry.group.dev.dependencies]
+black = "^24.8.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
